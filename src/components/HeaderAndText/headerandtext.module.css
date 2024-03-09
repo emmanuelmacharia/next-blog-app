@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: inherit;
+}
+
+
+.pageTitle {
+    font-size: 32px;
+    color: var(--highlight-color);
+}
+
+.header {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+}
+
+.description {
+    line-height: 32px;
+}

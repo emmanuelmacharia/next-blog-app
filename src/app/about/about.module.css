@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    gap: 100px;
+}
+
+.textContainer {
+    flex:1;
+    padding: 1rem 0;
+}
+
+.imageContainer {
+    flex:1;
+}
+
+.statContaner {
+    display: flex;
+    justify-content: space-between;
+}
