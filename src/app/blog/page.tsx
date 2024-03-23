@@ -1,11 +1,17 @@
 import Image from "next/image"
 import styles from "./blog.module.css"
+import { posts } from "@/core/stubs/postData"
+import PostCardComponent from "@/components/PostCard/postCard"
 const BlogPage = () => {
-    return <div>
-        <div className={styles.imageContainer}>
-         <Image src="https://images.pexels.com/photos/20440051/pexels-photo-20440051/free-photo-of-a-woman-leaning-against-a-railing-with-her-hand-on-her-chin.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="about us image" fill />
+    return(
+    <div className={styles.container}>
+        { posts.map((post) => 
+        <div className={styles.post} key={post.id}>
+        <PostCardComponent content={post} />
         </div>
+        )}
     </div>
+    )
 }
 
 export default BlogPage;

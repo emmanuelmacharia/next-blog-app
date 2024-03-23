@@ -39,3 +39,12 @@
     background-color: var(--btn);
     border: none;
 }
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .imageContainer {
+        display: none;
+    }
+  }

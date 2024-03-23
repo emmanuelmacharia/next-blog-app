@@ -1,5 +1,23 @@
-.imageContainer {
-    position: relative;
-    height: 500px;
-    width: 500px;
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
 }
+
+.post {
+    width: 30%;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .post {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .post {
+      width: 100%;
+    }
+  }

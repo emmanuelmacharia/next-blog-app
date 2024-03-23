@@ -19,4 +19,16 @@ export interface ImageInformation {
     src: string;
     alt: string;
     unoptimized?: boolean;
+    height?: number;
+}
+
+export interface PostCardContent {
+    src: string;
+    alt: string;
+    postTitle: string;
+    postDescription: string;
+    timestamp: string;
+    link: string;
+    id: number;
+    author: string;
 }

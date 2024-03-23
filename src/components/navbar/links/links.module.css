@@ -47,11 +47,9 @@
 
     .humburgerMenu {
         display: block;
-        padding: 10px;
         text-align: center;
         border: none;
         cursor: pointer;
-        font-size: 30px;
     }
     
 }
