@@ -1,4 +1,4 @@
-import { PostCardContent } from "../models/models";
+import { Post, PostCardContent } from "../models/models";
 import { posts } from "../stubs/postData";
 
 export const processPostData = (apiposts: {userId: number, id: number, title: string, body: string}[]):PostCardContent[]  => {

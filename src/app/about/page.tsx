@@ -4,7 +4,13 @@ import HeaderAndTextComponent from "@/components/HeaderAndText/headerandtext";
 import { HeroContent, Statistics } from "@/core/models/models";
 import StatsComponent from "@/components/stats/stats";
 import ImageContainerComponent from "@/components/ImageContainer/imageContainer";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Create Next App",
+    description: "Next applicaiton description",
+  };
+  
 
 const aboutPageContent: HeroContent = {
     header: "We create digital ideas that are bigger, bolder, braver and better",

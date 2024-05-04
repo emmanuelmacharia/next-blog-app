@@ -32,3 +32,23 @@ export interface PostCardContent {
     id: number;
     author: string;
 }
+
+
+export interface Post {
+    _id: any;
+    alt?: string;
+    title: string;
+    description: string;
+    createdAt: string;
+    updatedAt: string;
+    slug: string;
+    author: string;
+    src?: string;
+}
+
+
+export interface IResponseModel {
+    status: number;
+    statusMessage: string;
+    responseObject: any;
+};

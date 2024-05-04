@@ -1,9 +1,8 @@
 import mongoose from "mongoose";
 
-const connection: any = {}
+let connection: {isConnected: number} = { isConnected: 0 };
 
-
-export const connect = async () => {
+export const connectDB = async () => {
     if (connection.isConnected) {
         return;
     }
@@ -11,7 +10,9 @@ export const connect = async () => {
     try {
         const db = await mongoose.connect(connectionString);
         connection.isConnected = db.connections[0].readyState;
+        console.log("connection is successful \n", connection)
       } catch (error) {
+        console.log(error);
         handleError(error);
       }  
 }

@@ -1,3 +1,18 @@
+.cta {
+  padding: 30px 0;
+  margin: 20px 0;
+}
+
+
+.ctaButton {
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  background-color: var(--btn);
+  border: none;
+}
+
 .container {
     display: flex;
     flex-direction: row;
