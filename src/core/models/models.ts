@@ -52,3 +52,13 @@ export interface IResponseModel {
     statusMessage: string;
     responseObject: any;
 };
+
+export interface ISession {
+    user:  {
+        name: string;
+        email: string;
+        image: string;
+    };
+    expires: string;
+
+}
